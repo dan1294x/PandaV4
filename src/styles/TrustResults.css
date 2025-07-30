@@ -1,0 +1,80 @@
+.trust-results {
+  padding: 5rem 2rem;
+  background-color: var(--light-gray);
+}
+
+.trust-results h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.kpis-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.kpi-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-card h3 {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.kpi-card p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card cite {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .trust-results {
+    padding: 3rem 1rem;
+  }
+
+  .trust-results h2 {
+    font-size: 2rem;
+  }
+
+  .kpi-card h3 {
+    font-size: 2rem;
+  }
+}

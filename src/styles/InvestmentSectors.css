@@ -1,0 +1,63 @@
+.investment-sectors {
+  padding: 5rem 2rem;
+  background-color: var(--white);
+}
+
+.investment-sectors h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sector-card {
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sector-card:hover {
+  transform: translateY(-5px);
+}
+
+.sector-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.sector-card h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .investment-sectors {
+    padding: 3rem 1rem;
+  }
+
+  .investment-sectors h2 {
+    font-size: 2rem;
+  }
+
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sectors-grid {
+    grid-template-columns: 1fr;
+  }
+}
