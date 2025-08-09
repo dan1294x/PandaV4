@@ -1,3 +1,103 @@
 #root {
   width: 100%;
 }
+:root {
+  /* Colors */
+  --color-copper-black: #161412; /* Copper Black */
+  --color-deep-copper: #835811;  /* Deep Copper */
+  --color-royal-copper: #ae720a; /* Royal Copper */
+  --color-mid-copper: #edb039;   /* Mid Copper */
+
+  /* 'Copperish Gold' figura como degradado sin paradas exactas en el doc.
+     Propongo este gradiente basado en la paleta: */
+  --gradient-copperish-gold: linear-gradient(135deg, #ae720a 0%, #edb039 50%, #835811 100%);
+
+  /* Typography (familias primarias del documento) */
+  --font-baba-pro: "Baba Pro", sans-serif;
+  --font-adam: "ADAM", "Adam", sans-serif;
+  --font-nexa: "Nexa", "Nexa Regular", sans-serif;
+
+  /* Alias para uso rápido */
+  --font-base: var(--font-nexa);
+  --font-heading: var(--font-baba-pro);
+  --font-accent: var(--font-adam);
+
+  /* Pesos sugeridos (ajusta según los archivos que instales) */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+}
+
+
+
+/* FONTS */
+@font-face {
+  font-family: 'BabaPro';
+  src: url('../fonts/Babapro.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BabaPro-Bold';
+  src: url('../fonts/Babapro-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Adam-Light';
+  src: url('../fonts/Adam-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Adam-Bold';
+  src: url('../fonts/Adam-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Adam-Medium';
+  src: url('../fonts/Adam-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nexa-ExtraLight';
+  src: url('../fonts/Nexa-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nexa-Heavy';
+  src: url('../fonts/Nexa-Heavy.ttf') format('truetype');
+}
+
+
+/* pruebas de fuentes */
+
+.babapro {
+  font-family: 'BabaPro';
+}
+.babaproBold {
+  font-family: 'BabaPro-Bold';
+}
+.adamLight {
+  font-family: 'Adam-Light';
+}
+.adamBold {
+  font-family: 'Adam-Bold';
+}
+.adamMedium {
+  font-family: 'Adam-Medium';
+}
+.nexaExtra {
+  font-family: 'Nexa-ExtraLight';
+}
+.nexaHeavy {
+  font-family: 'Nexa-Heavy';
+}
+
+body {
+  font-family: 'Nexa-ExtraLight';
+}
+
+h1 {
+  font-family: 'BabaPro-Bold';
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'Adam-Bold';
+}
