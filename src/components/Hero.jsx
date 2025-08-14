@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Invertimos con inteligencia, crecemos con vision.</h1>
+        <h1>Invertimos con inteligencia, crecemos con visión.</h1>
         <p className="subtitle">Fondo privado de inversión con visión global y estrategias diversificadas.</p>
         <button className="cta-button" onClick={scrollToStrategy}>
           Conoce nuestras estrategias
