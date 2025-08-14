@@ -1,3 +1,52 @@
+@font-face {
+  font-family: 'BabaPro';
+  src: url('../fonts/Babapro.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BabaPro';
+  src: url('../fonts/Babapro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adam';
+  src: url('../fonts/Adam-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adam';
+  src: url('../fonts/Adam-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adam';
+  src: url('../fonts/Adam-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../fonts/Nexa-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +65,11 @@ html {
   --light-gray: #f5f5f5;
   --white: #ffffff;
 
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-base: 'Nexa', sans-serif;
+  --font-heading: 'BabaPro', sans-serif;
+  --font-subheading: 'Adam', sans-serif;
+
+  font-family: var(--font-base);
   line-height: 1.5;
   font-weight: 400;
 
