@@ -18,9 +18,15 @@
 }
 
 .navbar-brand {
+  font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color);
 }
 
 .navbar-nav {
@@ -29,6 +35,7 @@
 }
 
 .nav-link {
+  font-family: var(--font-subheading);
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
